@@ -7,7 +7,7 @@ class persegipanjang
     float panjang;
     float lebar;
     float luas;
-    void inputdata(){
+    void inputData(){
         cout << " input panjang : ";
         cin >> panjang;
         cout << " input lebar : ";
@@ -15,14 +15,19 @@ class persegipanjang
     }
     void menghitungluas(){
         luas=panjang*lebar;
+
+    }
+    void outputData(){
         cout << "luas persegi panjang =" << luas << endl;
-        
-        
+
     }
 
 };
-
-int main() {
-
-
+ 
+int main() 
+{
+    persegipanjang per;
+    per.inputData();
+    per.menghitungluas();
+    return 0;
 }
